@@ -1,0 +1,9 @@
+<h1><%= @jockey.name %></h1>
+
+<div>
+  <% @jockey.horses.each do |horse| %>
+    <% if horse.jockey_id == @jockey.id %>
+      <h3><%= horse.name %></h3>
+    <% end %>
+  <% end %>
+</div>
